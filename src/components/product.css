@@ -1,0 +1,129 @@
+.container {
+    margin-top: 70px;
+    margin-left: -60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.pinkimg {
+    transform: scaleX(-1);
+    width: 600px;
+    margin-left: -60px;
+    display: block;
+}
+.h1text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tinyimgs {
+    margin-top: 20px;
+    margin-right: 90px;
+    margin-left: -60px;
+}
+.circleIcon1 {
+    color: pink;
+    margin-right: 5px;
+}
+.circleIcon2 {
+    color: yellow;
+    margin-right: 6px;
+}
+.circleIcon3 {
+    color: greenyellow;
+}
+.buttonCounter{
+    padding:10px
+}
+.counter{
+    height: 40px;
+    width:78px;
+    border: 1px solid black;
+}
+.quantityButton{
+    border:none;
+    padding-top: 15px;
+    background-color: transparent;
+    margin-left: 5px; 
+}
+.addButton{
+    margin-top: 30px;
+    width:330px;
+    height:40px;
+    background-color: blue;
+    color:white;
+}
+.title{
+    text-align: center;
+    margin-top: 99px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.imageContainer{
+    position: relative;
+    display: inline-block;
+}
+.reviewProducts{
+    display: flex;
+    justify-content: space-around;
+    margin-top:60px;
+    margin-left:40px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+}
+.relatedImg {
+    transform: scaleX(-1);
+    width: 360px;
+    display:flex;
+}
+.viewButton{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:250px;
+    height:50px;
+    border-radius: 5px;
+    border: none;
+}
+.imgreview p{
+    color:rgb(174, 167, 167)
+}
+.imgreview h2{
+    font-weight:800;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    .imgContainer{
+        display: block;
+        margin-left: 150px;
+    }
+    .textContainer{
+        display: block;
+        text-align: center;
+    }
+   .counter{
+        display: flex;
+        margin-left: 360px;
+    }
+    .quantityButton{
+      font-size: 18px;
+      margin-top: -10px;
+      
+    }
+    .addButton{
+        margin-top: 50px;
+        margin-left: -80px;
+        width:400px;
+        height:60px;
+    }
+    .reviewProducts{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); 
+        gap:20px;  
+    }
+      img .relatedImg {
+        margin-right: 20px;
+    }
+}
